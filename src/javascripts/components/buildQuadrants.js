@@ -1,15 +1,29 @@
-const buildQuadrant = () => {
+const buildQuadrant = (action) => {
   const quadrant = `
-    <div id="containerQuadrant${activity}">
-      <div id="containerActivity${activity}">${activity}</div>
-      <div id="containerScore${score}">${score}</div>
+    <div id="containerQuadrant${action.activity}">
+      <div id="containerActivity${action.activity}">${action.activity}</div>
+      <div id="containerScore${action.score}">${action.score}</div>
       <div id="containerButtons">
-        <button id="btn${button1}">${button1}</button>
-        <button id="btn${button2}">${button2}</button>
+        <button id="btn${action.button1}">${action.button1}</button>
+        <button id="btn${action.button2}">${action.button2}</button>
       </div>
     </div>
   `;
   return quadrant;
 };
 
-export default { buildQuadrant };
+const showQuadrant = (array) => {
+  array.forEach((action) => {
+    if (action.name === 'Eat') {
+      $('#eat').append(buildQuadrant());
+    } else if (action.name === 'Play') {
+      $('#play').append(buildQuadrant());
+    } else if (action.name === 'Fight') {
+      $('#fight').append(buildQuadrant());
+    } else if (action.name === 'Sleep') {
+      $('#sleep').append(buildQuadrant());
+    }
+  });
+};
+
+export default { buildQuadrant, showQuadrant };

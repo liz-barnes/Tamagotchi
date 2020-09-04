@@ -1,8 +1,9 @@
 import '../styles/main.scss';
+import quadrantsData from './helpers/data/quadrantsData';
+import buildQuadrant from './components/buildQuadrants';
 
 const init = () => {
-  $('#app').html('<h1>HELLO! You are up and running!</h1>');
-  console.log('YOU ARE UP AND RUNNING!');
+  buildQuadrant.buildQuadrant(quadrantsData.getQuadrantData());
 };
 
 init();
