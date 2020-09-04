@@ -1,7 +1,11 @@
-const buttonEvents = () => {
-  $('button').click(e => {
-    const target = e.target.id;
-  });
-};
+// const buttonEvents = (e) => {
+//   $('button').click((e => {
+//     const target = e.target.id;
+//   }));
 
-export default { buttonEvents };
+//   if (target === )
+// };
+
+// export default { buttonEvents };
+
+// $('#btnHealthy').click( )
