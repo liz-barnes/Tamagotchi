@@ -12,18 +12,4 @@ const buildQuadrant = (action) => {
   return quadrant;
 };
 
-const showQuadrant = (array) => {
-  array.forEach((action) => {
-    if (action.name === 'Eat') {
-      $('#eat').append(buildQuadrant());
-    } else if (action.name === 'Play') {
-      $('#play').append(buildQuadrant());
-    } else if (action.name === 'Fight') {
-      $('#fight').append(buildQuadrant());
-    } else if (action.name === 'Sleep') {
-      $('#sleep').append(buildQuadrant());
-    }
-  });
-};
-
-export default { buildQuadrant, showQuadrant };
+export default { buildQuadrant };

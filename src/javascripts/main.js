@@ -1,9 +1,9 @@
 import '../styles/main.scss';
 import quadrantsData from './helpers/data/quadrantsData';
-import buildQuadrant from './components/buildQuadrants';
+import quadrant from './components/showQuadrants';
 
 const init = () => {
-  buildQuadrant.buildQuadrant(quadrantsData.getQuadrantData());
+  quadrant.showQuadrant(quadrantsData.getQuadrantData());
 };
 
 init();
