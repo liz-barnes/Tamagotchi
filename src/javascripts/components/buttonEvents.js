@@ -1,17 +1,26 @@
 import Data from '../helpers/data/quadrantsData';
+import ShowQuadrant from './showQuadrants';
 
 // const addScore = (array) => {
 //   activity.score += 10;
 // };
 
 const calculateScore = (array, target) => {
-  console.log(array, 'array');
-  console.log(target, 'target');
-  array.forEach((activity) => {
-    if (activity.button1 === target) {
-      const scoreChange = activity.score + activity.button1Value;
-      return scoreChange;
+  array.forEach((action) => {
+    if (action.button1 === target) {
+      // action.score += action.button1Value;
+      // const scoreChange = action.score + action.button1Value;
+      // console.log(scoreChange, 'score');
+      // Data.getQuadrantData().push(scoreChange);
+      // return scoreChange;
+    } else if (action.button2 === target) {
+      // action.score += action.button2Value;
     }
+    $('#eat').html('');
+    $('#play').html('');
+    $('#fight').html('');
+    $('#sleep').html('');
+    ShowQuadrant.showQuadrant(Data.getQuadrantData());
   });
 };
 
@@ -19,6 +28,7 @@ const buttonEvents = () => {
   $('.button').on('click', (e) => {
     const target = e.target.id;
     calculateScore(Data.getQuadrantData(), target);
+    console.log(target, 'btn id');
     // $(target).on('click', () => {
     //   console.log('target clicked');
     //   // activity.score += 10;
