@@ -3,6 +3,7 @@ const quadrantData = [
     activity: 'Eat',
     score: 100,
     button1: 'Healthy',
+    button1Value: 10,
     button2: 'Unhealthy'
   },
   {
