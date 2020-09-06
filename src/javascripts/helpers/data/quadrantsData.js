@@ -2,16 +2,16 @@ const quadrantData = [
   {
     activity: 'Eat',
     score: 100,
-    button1: 'Healthy',
-    button2: 'Unhealthy',
+    button1: 'Sushi',
+    button2: 'Icecream',
     button1Value: 10,
     button2Value: -3
   },
   {
     activity: 'Play',
     score: 50,
-    button1: 'Fun',
-    button2: 'Content',
+    button1: 'Frisbee',
+    button2: 'Puzzle',
     button1Value: 50,
     button2Value: 2
   },
