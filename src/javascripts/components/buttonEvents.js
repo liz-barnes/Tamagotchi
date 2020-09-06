@@ -8,13 +8,13 @@ import ShowQuadrant from './showQuadrants';
 const calculateScore = (array, target) => {
   array.forEach((action) => {
     if (action.button1 === target) {
-      // action.score += action.button1Value;
+      action.score += action.button1Value;
       // const scoreChange = action.score + action.button1Value;
       // console.log(scoreChange, 'score');
       // Data.getQuadrantData().push(scoreChange);
-      // return scoreChange;
+      // // return scoreChange;
     } else if (action.button2 === target) {
-      // action.score += action.button2Value;
+      action.score += action.button2Value;
     }
     $('#eat').html('');
     $('#play').html('');

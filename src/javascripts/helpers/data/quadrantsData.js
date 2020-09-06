@@ -5,7 +5,7 @@ const quadrantData = [
     button1: 'Healthy',
     button2: 'Unhealthy',
     button1Value: 10,
-    button2Value: 3
+    button2Value: -3
   },
   {
     activity: 'Play',
@@ -21,7 +21,7 @@ const quadrantData = [
     button1: 'Run',
     button2: 'Fight',
     button1Value: 1,
-    button2Value: 10
+    button2Value: -10
   },
   {
     activity: 'Sleep',
