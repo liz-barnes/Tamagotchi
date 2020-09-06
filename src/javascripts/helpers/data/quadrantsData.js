@@ -14,14 +14,14 @@ const quadrantData = [
   {
     activity: 'Fight',
     score: 100,
-    button1: 'Avoid Confrontation',
-    button2: 'Put Em Up'
+    button1: 'Run',
+    button2: 'Fight'
   },
   {
     activity: 'Sleep',
     score: 100,
-    button1: 'Nap Pls',
-    button2: 'CYA 2MRW'
+    button1: 'Nap',
+    button2: 'Sleep'
   }
 ];
 
