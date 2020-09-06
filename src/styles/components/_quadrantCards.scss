@@ -1,0 +1,19 @@
+#app {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 25px;
+  justify-content: center;
+}
+
+.quad {
+  margin: 25px;
+  width: 35%;
+}
+
+@each $quad, $quad-color in $quad-list {
+  .quad-#{$quad} {
+    background-color: $quad-color;
+    border-radius: 10px;
+    padding: 25px 25px 5px 25px;
+  }
+}
