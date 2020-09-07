@@ -8,6 +8,7 @@
 .quad {
   margin: 25px;
   width: 35%;
+  height: 50%;
 }
 
 @each $quad, $quad-color in $quad-list {
@@ -15,5 +16,7 @@
     background-color: $quad-color;
     border-radius: 10px;
     padding: 25px 25px 5px 25px;
+    border: #000000 2px solid;
+    height: 75%;
   }
 }

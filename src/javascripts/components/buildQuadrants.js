@@ -1,6 +1,6 @@
 const buildQuadrant = (action) => {
   const quadrant = `
-    <div class= quad-${action.activity} id= quad-${action.activity} style="border: 2px solid #000000;">
+    <div class= quad-${action.activity} id= quad-${action.activity}>
       <div id="containerActivity${action.activity}">
         <h1><bold>${action.activity}</bold></h1>
       </div>
@@ -8,8 +8,8 @@ const buildQuadrant = (action) => {
         <h3>${action.score}</h3>
       </div>
       <div id="containerButtons">
-        <button id="btn${action.button1}">${action.button1}</button>
-        <button id="btn${action.button2}">${action.button2}</button>
+        <button class="button" id="${action.button1}">${action.button1}</button>
+        <button class="button" id="${action.button2}">${action.button2}</button>
       </div>
     </div>
   `;
