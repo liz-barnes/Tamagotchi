@@ -1,6 +1,5 @@
 button {
     background-color: #000000;
-    border: #000000 2px solid;
     color: #ffffff;
     box-shadow: $box-shadow;
     outline: 0;
@@ -10,5 +9,6 @@ button {
     line-height: 42px;
     padding: 0 15px;
     margin: 20px 5px;
-    width: 100px;
+    width: 35%;
+    min-width: 100px;
   }
